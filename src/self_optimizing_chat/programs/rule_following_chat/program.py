@@ -52,7 +52,7 @@ class RuleFollowingChatModel(dspy.Module):
         if mode == 'training' or mode == 'retraining':
             # pylint: disable=unspecified-encoding
             with open(
-                'src/self_optimizing_chat/rule_following_chat/rules.jsonl',
+                'src/self_optimizing_chat/programs/rule_following_chat/rules.jsonl',
                 'a'
             ) as f:
                 if mode == 'retraining':
@@ -78,7 +78,7 @@ class RuleFollowingChatModel(dspy.Module):
         if mode == 'testing':
             # pylint: disable=unspecified-encoding
             with open(
-                'src/self_optimizing_chat/rule_following_chat/rules.jsonl',
+                'src/self_optimizing_chat/programs/rule_following_chat/rules.jsonl',
                 'r'
             ) as f:
                 rules = [json.loads(line) for line in f]

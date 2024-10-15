@@ -69,6 +69,8 @@ celerybeat.pid
 .venv
 
 # Virtualenv
+local_cache/
+pyenv/
 env/
 venv/
 ENV/

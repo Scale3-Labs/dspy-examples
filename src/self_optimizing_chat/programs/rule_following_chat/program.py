@@ -46,6 +46,7 @@ class RuleFollowingChatModel(dspy.Module):
         self.qa = dspy.ChainOfThought(QuestionAnswer)
         self.rule = dspy.ChainOfThought(Rule)
 
+    # pylint: disable=missing-function-docstring
     def forward(self, inputs: dict):
         # pylint: disable=redefined-outer-name
         mode = inputs['mode']

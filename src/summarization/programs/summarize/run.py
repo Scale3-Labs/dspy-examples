@@ -48,5 +48,5 @@ evaluate = Evaluate(devset=trainset, metric=metric,
                     display_progress=True,
                     display_table=True, provide_traceback=True)
 
-res = evaluate(program, devset=trainset)
+res = evaluate(program)
 print(res)

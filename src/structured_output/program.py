@@ -52,3 +52,4 @@ outlines_lm = OutlinesLM(
 )
 final_res = outlines_lm(res.is_true)
 print(final_res)
+

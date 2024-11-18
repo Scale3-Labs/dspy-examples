@@ -1,7 +1,11 @@
 
 import base64
 import dspy
+from langtrace_python_sdk import langtrace
 from program import WebsiteDataExtraction
+
+
+langtrace.init()
 
 
 def extract_website_data(website_screenshot_path: str):
